@@ -7,7 +7,7 @@ require (
 	github.com/muesli/reflow v0.3.0
 	github.com/muesli/termenv v0.16.0
 	github.com/olekukonko/tablewriter v0.0.5
-	github.com/rwinkhart/go-highlite v0.1.0
+	github.com/rwinkhart/go-highlite v0.1.1
 	github.com/yuin/goldmark v1.7.12
 	github.com/yuin/goldmark-emoji v1.0.6
 )
