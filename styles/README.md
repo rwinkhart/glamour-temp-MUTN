@@ -175,20 +175,13 @@ Style:
 
 The `code_block` element represents a block of code.
 
-| Attribute | Value  | Description                                                     |
-| --------- | ------ | --------------------------------------------------------------- |
-| theme     | string | Defines the [Chroma][chroma] theme used for syntax highlighting |
-
-[chroma]: https://github.com/alecthomas/chroma
-
 #### Example
 
 Style:
 
 ```json
 "code_block": {
-    "color": "200",
-    "theme": "solarized-dark"
+    "color": "200"
 }
 ```
 

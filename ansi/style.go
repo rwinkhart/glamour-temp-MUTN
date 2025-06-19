@@ -1,40 +1,5 @@
 package ansi
 
-// Chroma holds all the chroma settings.
-type Chroma struct {
-	Text                StylePrimitive `json:"text,omitempty"`
-	Error               StylePrimitive `json:"error,omitempty"`
-	Comment             StylePrimitive `json:"comment,omitempty"`
-	CommentPreproc      StylePrimitive `json:"comment_preproc,omitempty"`
-	Keyword             StylePrimitive `json:"keyword,omitempty"`
-	KeywordReserved     StylePrimitive `json:"keyword_reserved,omitempty"`
-	KeywordNamespace    StylePrimitive `json:"keyword_namespace,omitempty"`
-	KeywordType         StylePrimitive `json:"keyword_type,omitempty"`
-	Operator            StylePrimitive `json:"operator,omitempty"`
-	Punctuation         StylePrimitive `json:"punctuation,omitempty"`
-	Name                StylePrimitive `json:"name,omitempty"`
-	NameBuiltin         StylePrimitive `json:"name_builtin,omitempty"`
-	NameTag             StylePrimitive `json:"name_tag,omitempty"`
-	NameAttribute       StylePrimitive `json:"name_attribute,omitempty"`
-	NameClass           StylePrimitive `json:"name_class,omitempty"`
-	NameConstant        StylePrimitive `json:"name_constant,omitempty"`
-	NameDecorator       StylePrimitive `json:"name_decorator,omitempty"`
-	NameException       StylePrimitive `json:"name_exception,omitempty"`
-	NameFunction        StylePrimitive `json:"name_function,omitempty"`
-	NameOther           StylePrimitive `json:"name_other,omitempty"`
-	Literal             StylePrimitive `json:"literal,omitempty"`
-	LiteralNumber       StylePrimitive `json:"literal_number,omitempty"`
-	LiteralDate         StylePrimitive `json:"literal_date,omitempty"`
-	LiteralString       StylePrimitive `json:"literal_string,omitempty"`
-	LiteralStringEscape StylePrimitive `json:"literal_string_escape,omitempty"`
-	GenericDeleted      StylePrimitive `json:"generic_deleted,omitempty"`
-	GenericEmph         StylePrimitive `json:"generic_emph,omitempty"`
-	GenericInserted     StylePrimitive `json:"generic_inserted,omitempty"`
-	GenericStrong       StylePrimitive `json:"generic_strong,omitempty"`
-	GenericSubheading   StylePrimitive `json:"generic_subheading,omitempty"`
-	Background          StylePrimitive `json:"background,omitempty"`
-}
-
 // StylePrimitive holds all the basic style settings.
 type StylePrimitive struct {
 	BlockPrefix     string  `json:"block_prefix,omitempty"`
@@ -76,8 +41,6 @@ type StyleBlock struct {
 // StyleCodeBlock holds the style settings for a code block.
 type StyleCodeBlock struct {
 	StyleBlock
-	Theme  string  `json:"theme,omitempty"`
-	Chroma *Chroma `json:"chroma,omitempty"`
 }
 
 // StyleList holds the style settings for a list.
